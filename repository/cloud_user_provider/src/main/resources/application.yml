@@ -1,0 +1,18 @@
+server:
+  port: 8082
+  
+spring:
+  application:
+    name: user-provider
+  datasource:
+    url: jdbc:mysql://localhost:3306/solr_demo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:8761/eureka/
+  instance:
+    hostname: localhost

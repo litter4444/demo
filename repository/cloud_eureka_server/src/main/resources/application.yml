@@ -1,0 +1,18 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+#  单机版 registerWithEureka fetchRegistry设置为false;集群环境下server与server相互注册则不配置该属性
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8761/eureka/
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  application:
+    name: eureka-server
