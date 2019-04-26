@@ -3,9 +3,9 @@ server:
   
 spring:
   application:
-    name: user-provider
+    name: user-customer
     
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://admin:admin@localhost:8761/eureka/
